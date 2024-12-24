@@ -1,0 +1,72 @@
+.carousel-inner > .carousel-item > .carousel-image-box {
+  height: 78vh;
+  float: right;
+}
+
+.carousel-image-box img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.carousel-inner {
+  background-color: #030b17;
+}
+.carousel-image-border-left {
+  height: 400px;
+  /* width: 50px; */
+  position: absolute;
+  left: 0.6;
+  top: 0;
+  bottom: 0;
+  border: 40vh solid transparent;
+  border-right: none;
+  opacity: 1;
+  border-color: transparent;
+  border-image-source: linear-gradient(to right, #030b17, transparent);
+}
+
+.carousel {
+  /* padding: 20px; */
+  border-radius: 10px;
+}
+.carousel-item {
+  width: 100%;
+  background-color: transparent;
+  /* padding: 20px; */
+}
+.carousel-inner > .carousel-item > .carousel-content-box {
+  padding: 40px;
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 0;
+  color: white;
+  /* background-color: blue; */
+  /* text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); */
+  border: 2px white;
+  border-right-color: white;
+  background-color: inherit;
+}
+
+.content-title {
+  padding-left: 50px;
+  text-transform: capitalize;
+  margin-top: 80px;
+}
+
+.content-des {
+  width: 80%;
+  line-height: 30px;
+  padding-left: 50px;
+  margin-top: 30px;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 980px) {
+  .carousel-content{
+    display: none;
+  }
+}
+

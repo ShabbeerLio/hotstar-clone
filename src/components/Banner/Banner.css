@@ -1,0 +1,126 @@
+.Banner {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.Banner-image {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.Banner-image:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    display: inline-block;
+    opacity: 0.9;
+    background-image: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.Banner-image:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    display: inline-block;
+    opacity: 0.9;
+    background-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.Banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Banner-box-detail{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    padding-left: 6%;
+    width: 35%;
+}
+.Banner-box-detail h2{
+    color: white;
+}
+.Banner-box-detail {
+    color: hsla(0, 0%, 100%, 0.793);
+}
+.Banner-box-detail p{
+    font-weight: 100;
+}
+.Banner-box-detail h5{
+    font-size: 16px;
+    margin: 2rem 0;
+}
+.Banner-desc{
+    display: flex;
+    margin: 1rem 0;
+}
+.Banner-desc li{
+    font-size: 16px;
+    margin-right: 1rem;
+}
+
+.Banner-btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding-top: 1rem;
+}
+.Banner-btn .play-btn{
+    background-color: hsla(0, 0%, 100%, .2);
+    margin: 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.Banner-btn p{
+    background-color: hsla(0, 0%, 100%, .2);
+    margin: 0;
+    padding: 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.Banner-btn .play-btn svg{
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.Banner-btn p svg{
+    font-size: 20px;
+}
+
+.Banner-slider{
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    padding-right: 6%;
+}
+
+.Banner-slider .movies-list {
+    height: 80px;
+    margin: 0;
+}
+.Banner-slider .card-container {
+    height: 80px;
+}
+.Banner-slider .card {
+    min-width: 100px;
+    width: 100px;
+    height: 50px;
+}
